@@ -13,7 +13,7 @@
 <form action="https://webto.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00Dak000002JPMn" method="POST">
 
 <input type=hidden name="orgid" value="00Dak000002JPMn">
-<input type=hidden name="retURL" value="http://https://aksana23.github.io/Property/">
+<input type=hidden name="retURL" value="https://aksana23.github.io/Property2/">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
@@ -23,16 +23,61 @@
 <!--  value="aksanakoichumankyzy42@gmail.com">                                -->
 <!--  ----------------------------------------------------------------------  -->
 
-<label for="name">Contact Name</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
 
-<label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /><br>
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-<label for="phone">Phone</label><input  id="phone" maxlength="40" name="phone" size="20" type="text" /><br>
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
 
-<label for="subject">Subject</label><input  id="subject" maxlength="80" name="subject" size="20" type="text" /><br>
-
-<label for="description">Description</label><textarea name="description"></textarea><br>
-
-<input type="submit" name="submit">
-
-</form>
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Contact Us</h1>
+        <input type="text" name="name" placeholder="Your Name" required><br>
+        <input type="text" name="state" placeholder="State" required><br>
+        <input type="email" name="email" placeholder="Your Email" required><br>
+        <input type="tel" name="phone" placeholder="Your Phone" required><br>
+        <input type="text" name="subject" placeholder="Subject" required><br>
+        <textarea name="description" placeholder="Description" rows="4" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
